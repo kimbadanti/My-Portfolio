@@ -385,9 +385,9 @@ section {
     background-color: #262626;  /* Dark black for other sections */
 }
 
-/* Footer */
+/* Footer
 footer {
-    background-color: #1c1c1c; /* New shade of black for footer */
+    background-color: #1c1c1c; 
     color: #73BBC9;
     text-align: center;
     padding: 50px 0;
@@ -438,4 +438,145 @@ footer .w3-small {
 
 .resume-btn:hover {
     background-color: #45a049;
+} */
+
+/* ================= Technical Tools Section ================= */
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.tech-card {
+    background: #262626;
+    padding: 30px;
+    border-radius: 12px;
+    transition: background 0.5s, transform 0.5s;
+    min-height: 260px;
+}
+
+.tech-card:hover {
+    background: #AD88C6;
+    transform: translateY(-10px);
+}
+
+.tech-card h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #FF71CD;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tech-card ul li {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #73BBC9;
+    position: relative;
+    padding-left: 18px;
+}
+
+.tech-card ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+/* ================= Footer Redesign ================= */
+
+.custom-footer {
+    background: #080202;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.footer-icons a {
+    font-size: 28px;
+    color: #73BBC9;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #FF71CD;
+    transform: translateY(-5px);
+}
+
+.resume-btn-footer {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #FF71CD, #AD88C6);
+    color: #080202;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.resume-btn-footer:hover {
+    transform: scale(1.05);
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #73BBC9;
+}
+/* ================= Header Social Icons ================= */
+
+.header-icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.header-icons a {
+    font-size: 22px;
+    color: #73BBC9;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #FF71CD;
+    transform: translateY(-3px);
+}
+/* ================= Header Resume Button ================= */
+
+.header-resume-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 26px;
+    background: linear-gradient(135deg, #FF71CD, #AD88C6);
+    color: #080202;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-resume-btn i {
+    margin-right: 6px;
+}
+
+.header-resume-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 113, 205, 0.4);
 }
