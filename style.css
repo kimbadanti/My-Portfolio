@@ -12,17 +12,35 @@ body{
     background-color: #080202;
     color: #73BBC9;
 }
-#header{
+/* #header{
     width: 100%;
     height: 100vh;
-    background-image: url("images/WhatsApp Image 2025-04-17 at 05.51.46_15f81977.png");
+    /* background-image: url("images/WhatsApp Image 2025-04-17 at 05.51.46_15f81977.png"); */
+    /* background-image: url("images/black blazer.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     padding-top: 80px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+} */
+
+#header{
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #080202;
 }
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: calc(100vh - 100px);
+}
+
+
 .container{
     padding: 10px 10%;
 }
@@ -71,17 +89,35 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
+.header-text {
+    max-width: 55%;
+    padding-bottom: 100px;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
-    margin-top: 20px;
+    line-height: 1.2;
 }
+
 .header-text span{
     color: #FF71CD;
 }
+.header-image {
+    max-width: 45%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.header-image img {
+    width: auto;
+    height: 100vh;          /* makes image tall */
+    max-height: 700px;     /* prevents too big */
+    object-fit: contain;
+    background: none;      /* removes black box feel */
+}
+
+
 
 #About{
     padding: 80px 0;
@@ -579,4 +615,21 @@ footer .w3-small {
 .header-resume-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 113, 205, 0.4);
+} 
+
+@media (max-width: 900px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-text {
+        max-width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .header-image img {
+        height: 350px;
+    }
 }

@@ -11,8 +11,11 @@
 </head>
 
 <body>
+    <!-- ================= HEADER / HERO ================= -->
     <div id="header">
         <div class="container">
+
+            <!-- NAVBAR -->
             <nav>
                 <div class="logo-text">Kimbadanti</div>
                 <ul>
@@ -23,30 +26,49 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <!-- <p>DATA SCIENTIST</p> -->
-                <h1>Hi, I'm <span>Kimbadanti Shaw</span><br>From India.</h1>
 
-                <div class="header-icons">
-                    <a href="https://github.com/kimbadanti" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://leetcode.com/u/Kimbadanti_Shaw/" target="_blank"><i
-                            class="fa-solid fa-code"></i></a>
-                    <a href="https://www.linkedin.com/in/kimbadanti-shaw/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/___kimuuu___/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="mailto:shaw08kimbadanti@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <!-- HERO CONTENT -->
+            <div class="header-content">
+
+                <!-- LEFT TEXT -->
+                <div class="header-text">
+                    <!-- <p>DATA SCIENTIST</p> -->
+                    <h1>
+                        Hi, I'm <span>Kimbadanti Shaw</span><br>
+                        From India.
+                    </h1>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="header-icons">
+                        <a href="https://github.com/kimbadanti" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/Kimbadanti_Shaw/" target="_blank">
+                            <i class="fa-solid fa-code"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimbadanti-shaw/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:shaw08kimbadanti@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- RESUME BUTTON -->
+                    <a href="images/Kimbadanti_Shaw_cv.pdf" download class="header-resume-btn">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
                 </div>
 
-                <a href="images\Kimbadanti_Shaw_cv.pdf" download class="header-resume-btn">
-                    <i class="fa-solid fa-download"></i> Download Resume
-                </a>
+                <!-- RIGHT IMAGE -->
+                <div class="header-image">
+                    <img src="images\black blazer.jpeg" alt="Kimbadanti Shaw">
+                </div>
+
             </div>
-
-
         </div>
-
     </div>
+
     <div id="About">
         <div class="container">
             <div class="row">
@@ -170,6 +192,26 @@
             <h1 class="sub-title">My Projects</h1>
             <div class="services-list">
                 <div>
+                    <i class="fa-solid fa-microphone-lines"></i>
+                    <h2>Medical Voice Bot – AI-Powered Voice Assistant</h2>
+                    <p>
+                        Medical Voice Bot is an intelligent voice-enabled healthcare assistant that allows users to
+                        interact using speech. It integrates Speech-to-Text (STT), Large Language Models (LLMs),
+                        and Text-to-Speech (TTS) to provide real-time, conversational medical assistance.
+                        The system demonstrates an end-to-end AI voice pipeline for healthcare applications.
+                    </p>
+
+                    <a href="https://github.com/kimbadanti/AI-Voice-Doctor">
+                        <i class="fa-brands fa-github"></i> Learn More
+                    </a>
+                    <br />
+
+                    <a href="https://youtu.be/qnhgeWGTdyw" target="_blank">
+                        <i class="fa-solid fa-video"></i> Demo Video
+                    </a>
+                </div>
+
+                <div>
                     <i class="fa-solid fa-lungs"></i>
                     <h2>Chest Cancer Classification with MLOps Integration</h2>
                     <p>The Chest Cancer Classification project is an end-to-end machine learning solution designed for
@@ -224,7 +266,7 @@
         <!-- <a href="#" class="btn">See More</a> -->
         <div id="techTool">
             <div class="container">
-                <h1 class="sub-title">Technical Tools</h1>
+                <h1 class="sub-title">Technical Skills & Tools</h1>
 
                 <div class="tech-grid">
 
@@ -232,20 +274,23 @@
                     <div class="tech-card">
                         <h2><i class="fa-solid fa-code"></i> Programming Languages</h2>
                         <ul>
-                            <li>C / C++</li>
                             <li>Python</li>
                             <li>Java</li>
-                            <li>JavaScript</li>
+                            <li>C / C++</li>
+                            <li>JavaScript (Node.js)</li>
+                            <li>SQL</li>
                         </ul>
                     </div>
 
-                    <!-- Web Development -->
+                    <!-- Backend & Web Development -->
                     <div class="tech-card">
-                        <h2><i class="fa-solid fa-globe"></i> Web Development</h2>
+                        <h2><i class="fa-solid fa-server"></i> Backend & Web Development</h2>
                         <ul>
-                            <li>HTML / CSS</li>
+                            <li>FastAPI</li>
                             <li>Flask</li>
-                            <li>REST APIs</li>
+                            <li>RESTful APIs</li>
+                            <li>Microservices Architecture</li>
+                            <li>MVC Architecture</li>
                         </ul>
                     </div>
 
@@ -256,6 +301,43 @@
                             <li>MySQL</li>
                             <li>MongoDB</li>
                             <li>Oracle DB</li>
+                            <li>Database Design & Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- AI / Machine Learning -->
+                    <div class="tech-card">
+                        <h2><i class="fa-solid fa-brain"></i> AI & Machine Learning</h2>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Deep Learning</li>
+                            <li>Natural Language Processing (NLP)</li>
+                            <li>Computer Vision</li>
+                            <li>Model Training & Evaluation</li>
+                        </ul>
+                    </div>
+
+                    <!-- GenAI & LLMs -->
+                    <div class="tech-card">
+                        <h2><i class="fa-solid fa-robot"></i> GenAI & LLM Systems</h2>
+                        <ul>
+                            <li>Large Language Models (LLMs)</li>
+                            <li>RAG (Retrieval-Augmented Generation)</li>
+                            <li>Embeddings & Vector Search</li>
+                            <li>Prompt Engineering</li>
+                            <li>LLM APIs (GROQ, Gemini)</li>
+                        </ul>
+                    </div>
+
+                    <!-- ML & AI Frameworks -->
+                    <div class="tech-card">
+                        <h2><i class="fa-solid fa-cubes"></i> ML & AI Frameworks</h2>
+                        <ul>
+                            <li>PyTorch</li>
+                            <li>TensorFlow</li>
+                            <li>Keras</li>
+                            <li>Scikit-learn</li>
+                            <li>LangChain</li>
                         </ul>
                     </div>
 
@@ -263,33 +345,34 @@
                     <div class="tech-card">
                         <h2><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h2>
                         <ul>
-                            <li>AWS EC2</li>
+                            <li>Google Cloud Platform (Cloud Run, Vertex AI)</li>
+                            <li>AWS (EC2, S3)</li>
                             <li>Docker</li>
-                            <li>GitHub Actions</li>
+                            <li>GitHub Actions (CI/CD)</li>
                             <li>Linux</li>
                         </ul>
                     </div>
 
-                    <!-- Tools & Platforms -->
+                    <!-- MLOps & Tools -->
                     <div class="tech-card">
-                        <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</h2>
+                        <h2><i class="fa-solid fa-screwdriver-wrench"></i> MLOps & Developer Tools</h2>
                         <ul>
+                            <li>MLflow</li>
+                            <li>DVC</li>
                             <li>Git & GitHub</li>
                             <li>Jupyter Notebook</li>
                             <li>Google Colab</li>
-                            <li>MLflow</li>
-                            <li>DVC</li>
                         </ul>
                     </div>
 
-                    <!-- Core Concepts -->
+                    <!-- Core Computer Science -->
                     <div class="tech-card">
-                        <h2><i class="fa-solid fa-brain"></i> Core Concepts</h2>
+                        <h2><i class="fa-solid fa-lightbulb"></i> Core Computer Science</h2>
                         <ul>
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                            <li>OOP</li>
-                            <li>NLP</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Object-Oriented Programming (OOP)</li>
+                            <li>DBMS</li>
+                            <li>System Design Basics</li>
                         </ul>
                     </div>
 
